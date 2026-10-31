@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Ministry of Pies</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -13,18 +14,23 @@
     body {
       margin: 0;
       min-height: 100vh;
+      min-height: 100dvh;
       background-color: #000;
       color: #fff;
       font-family: Arial, Helvetica, sans-serif;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
       text-align: center;
     }
 
     .container {
       width: 100%;
+      flex: 1;
       padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     img {
@@ -50,9 +56,51 @@
     a:hover {
       opacity: 0.7;
     }
+
+    /* Bottom navigation buttons */
+
+    .bottom-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 20px 30px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      background: transparent;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: lowercase;
+      transition: all 0.2s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #fff;
+      color: #000;
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+      p {
+        font-size: 16px;
+      }
+
+      .nav-button {
+        padding: 10px 18px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <main class="container">
     <img src="mop.png" alt="The Ministry of Pies">
 
@@ -62,5 +110,11 @@
       to learn more.
     </p>
   </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a href="about.html" class="nav-button">about</a>
+    <a href="photobomb.html" class="nav-button">our new app</a>
+  </nav>
+
 </body>
 </html>
