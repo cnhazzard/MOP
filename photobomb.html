@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Photo Bomb | The Ministry of Pies</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      flex: 1;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      max-width: 750px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0 0 30px;
+      text-transform: lowercase;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* Bottom navigation button */
+
+    .bottom-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 20px 30px;
+    }
+
+    .nav-button {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      background: transparent;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: lowercase;
+      transition: all 0.2s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #fff;
+      color: #000;
+      opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      .nav-button {
+        padding: 10px 18px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="content">
+      <h1>holiday photo bomb</h1>
+
+      <p>
+        Holiday Photo Bomb is the first app from
+        The Ministry of Pies and is coming this December.
+        The app allows you to add random fun photo bombers
+        dressed with a holiday flair into the background
+        of any photo. The "photo bombers" will be updated
+        often, so the fun of random holiday photo bombers
+        is always fresh! Check back here for updates on
+        the release date.
+      </p>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-button">home</a>
+  </nav>
+
+</body>
+</html>
